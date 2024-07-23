@@ -4,6 +4,6 @@ services:
   - docker
 before_install: 
   -docker build -t chamilg/docker-react -f Dockerfile.dev
-  # what should be done
+  # Tell travis to run our testsuite
 script: 
   - docker run -e CI=true chamilg/docker-react npm run test

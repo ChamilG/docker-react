@@ -2,6 +2,7 @@ sudo: required
 # what service needed to be used
 services:
   - docker
+  # Tell travis to have a copy of docker
 before_install: 
   -docker build -t chamilg/docker-react -f Dockerfile.dev
   # Tell travis to run our testsuite
